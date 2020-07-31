@@ -1,7 +1,7 @@
-var ZetaActive = false;
-var KappaActive = false;
-var PsiActive = false;
+var ZetaDisabled = true;
+var KappaDisabled = true;
+var PsiDisabled = true;
 
-document.getElementById("zeta").enabled = ZetaActive;
-document.getElementById("kappa").enabled = KappaActive;
-document.getElementById("psi").enabled = PsiActive;
+document.getElementById("zeta").disabled = ZetaDisabled;
+document.getElementById("kappa").disabled = KappaDisabled;
+document.getElementById("psi").disabled = PsiDisabled;
