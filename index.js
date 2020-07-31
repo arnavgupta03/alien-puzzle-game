@@ -7,3 +7,6 @@ function disableButtons() {
     document.getElementById("kappa").disabled = KappaDisabled;
     document.getElementById("psi").disabled = PsiDisabled;
 }
+function onLoad() {
+    disableButtons();
+}
