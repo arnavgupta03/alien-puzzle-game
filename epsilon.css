@@ -1,0 +1,17 @@
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2017/09/12/11/56/universe-2742113_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: inherit;
+    font-family: sans-serif;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
