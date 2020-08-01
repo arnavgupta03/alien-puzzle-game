@@ -61,7 +61,7 @@ function outputBot(input, questionNum){
         if (input === "fkzg"){
             let botDiv = document.createElement("div");
             botDiv.id = "bot";
-            botDiv.innerHTML = 'Translator: <span id="user-response">Correct! Alright, onto your first lesson. The translation between English and Zet is called a Caesar Cipher. It is one of the easiest to decode, since you just need to shift the alphabet a certain number of letters. </span>';
+            botDiv.innerHTML = 'Translator: <span id="user-response">Correct! Alright, onto your first lesson. The translation between English and Zet is called a Caesar Cipher. It is one of the easiest to decode, since you just need to shift the alphabet a certain number of letters. One way to be able to tell how much the shift is between English and another language that uses the Caesar Cipher is to count the number of letters between the most common letter in the other language and the letter e. For example, in Zet, the most common letter is k. What is the shift?</span>';
             botDiv.style.color = "white";
             document.body.appendChild(botDiv);
             questNum += 1;
@@ -69,6 +69,21 @@ function outputBot(input, questionNum){
             let botDiv = document.createElement("div");
             botDiv.id = "bot";
             botDiv.innerHTML = "Translator: <span id='user-response'>Sorry that's incorrect, try again!</span>";
+            botDiv.style.color = "white";
+            document.body.appendChild(botDiv);
+        }
+    } else if (questionNum == 2) {
+        if (parseInt(input) === 6){
+            let botDiv = document.createElement("div");
+            botDiv.id = "bot";
+            botDiv.innerHTML = 'Translator: <span id="user-response">Nice job! Onto the next lesson.</span>';
+            botDiv.style.color = "white";
+            document.body.appendChild(botDiv);
+            questNum += 1;
+        } else {
+            let botDiv = document.createElement("div");
+            botDiv.id = "bot";
+            botDiv.innerHTML = "Translator: <span id='user-response'>No, that's not the right number. Why don't you try again?</span>";
             botDiv.style.color = "white";
             document.body.appendChild(botDiv);
         }
