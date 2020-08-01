@@ -10,7 +10,6 @@ function checkAnswer(){
     var solution = 432044414;
     if (answer == solution){
         alert("Congratulations! The judge found your answer to be correct and let you conduct your research on Epsilon. When doing your research on the culture of the Epsilonians, you end up reading a book that says that the aliens of the planet Zeta has a culture that is much more interesting. So let's go there!");
-        //window.history.pushState(null, "Welcome to Galaxy Center!", "index.html");
         localStorage.setItem("epsilonDone","true");
         window.location.href = "index.html";
     } else {
