@@ -6,5 +6,13 @@ function writeHints() {
     document.body.appendChild(hints);
 }
 function checkAnswer(){
-
+    var answer = document.getElementById("solution").value;
+    var solution1 = "zxgtyrgzux";
+    var solution2 = "ZXGTYRGZUX";
+    var solution3 = "Zxgtyrgzux";
+    if (answer == solution1 || answer == solution2 || answer == soolution3){
+        alert("Great! You did it.");
+    } else {
+        alert("Not exactly. Try again!");
+    }
 }
