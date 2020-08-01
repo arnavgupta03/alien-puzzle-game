@@ -4,7 +4,7 @@ function disableButtons() {
     var PsiDisabled = true;
     var epsilonDone = localStorage.getItem("epsilonDone");
 
-    if (epsilonDone.localeCompare("true") == 0){
+    if (epsilonDone.localeCompare("true") != 0){
         document.getElementById("zeta").disabled = ZetaDisabled;
     }
     document.getElementById("kappa").disabled = KappaDisabled;
