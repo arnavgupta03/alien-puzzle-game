@@ -5,13 +5,14 @@ function writeHints() {
     hints.style.position = "absolute";
     document.body.appendChild(hints);
 }
-function checkAnswer(){
+function checkFirstAnswer(){
     var answer = document.getElementById("solution").value;
     var solution1 = "zxgtyrgzux";
     var solution2 = "ZXGTYRGZUX";
     var solution3 = "Zxgtyrgzux";
     if (answer == solution1 || answer == solution2 || answer == soolution3){
         alert("Great! You did it.");
+        document.getElementById("afterFirstCorrect").value = "Awesome! You found the word for translator, which led you to a translator. But the only translator you could find only works online. So you get on your holo-computer to contact them, and the Zet lessons begin!";
     } else {
         alert("Not exactly. Try again!");
     }
