@@ -1,12 +1,12 @@
 body {
-    background-image: url('https://cdn.pixabay.com/photo/2017/09/12/11/56/universe-2742113_960_720.jpg');
+    background-image: url('https://cdn.pixabay.com/photo/2012/11/28/10/16/star-clusters-67616_960_720.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 h1 {
     text-align: center;
-    color: inherit;
+    color: whitesmoke;
     font-family: sans-serif;
 }
 
@@ -14,4 +14,13 @@ p {
     text-align: center;
     color: white;
     font-family: sans-serif;
+}
+
+div.outer {
+    text-align: center;
+    color: white;
+}
+
+div.prompt {
+    display: inline-block;
 }
