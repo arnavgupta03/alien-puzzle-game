@@ -3,6 +3,7 @@
     <head>
         <title>Welcome to Planet Zeta!</title>
         <script type="text/javascript" src="zeta.js"></script>
+        <link rel="stylesheet" href="zeta.css">
     </head>
     <body onload="onLoad()">
         <!--Caesar Cipher Puzzle-->
@@ -16,10 +17,14 @@
         <p>
             Luckily, you realize something. You realize that there are 26 letters in the Zet alphabet and that the prevalence of each letter is similar to English. Now, that might be similar to some kind of cipher. So, now all you need to do is find the word for 'translator' in Zet. How hard could that be?
         </p>
-        <label for="solution">The word for 'translator' in Zet is:</label>
-        <input type="text" id="solution" name="solution" placeholder="Your answer here">
-        <button onclick="checkFirstAnswer()">Submit</button><br>
-        <button id="hint" onclick="writeHints()">Hints</button><br>
-        <p id="afterFirstCorrect"></p>
+        <div class="outer">
+            <div class="prompt">
+                <label for="solution">The word for 'translator' in Zet is:</label>
+                <input type="text" id="solution" name="solution" placeholder="Your answer here">
+                <button onclick="checkFirstAnswer()">Submit</button><br>
+                <button id="hint" onclick="writeHints()">Hints</button><br>
+                <p id="afterFirstCorrect"></p>
+            </div>
+        </div>
     </body>
 </html>
