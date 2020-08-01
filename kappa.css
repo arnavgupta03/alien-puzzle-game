@@ -1,0 +1,26 @@
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2015/10/12/15/12/milky-way-984286__340.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+div.outer {
+    text-align: center;
+    color: white;
+}
+
+div.prompt {
+    display: inline-block;
+}

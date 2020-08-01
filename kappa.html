@@ -2,12 +2,27 @@
 <html>
     <head>
         <title>Welcome to Planet Kappa!</title>
+        <link rel="stylesheet" href="kappa.css">
         <script type="text/javascript" src="kappa.js"></script>
     </head>
     <body>
         <h1>Welcome to Planet Kappa!</h1>
         <p>
-            If you're here, you must have bested the aliens on Planet Epsilon and Planet Zeta. But here, you face the 
+            If you're here, you must have bested the aliens on Planet Epsilon and Planet Zeta. But here, you face the Kappans. 
         </p>
+        <p>
+            As you land on the planet, you immediately notice a group of armed guards surround your ship. You're exhausted from the other planets, and so, you surrender. But, they don't let you go so easily. You first have to answer a series of questions. Also, your translator's still broken.
+        </p>
+        <p>
+            They ask you: No ndu undl wregt yyu pge?
+        </p>
+        <div class="outer">
+            <div class="prompt">
+                <label for="solution">What do you say?</label>
+                <input type="text" id="solution" name="solution" placeholder="Your answer here">
+                <button onclick="checkAnswer()">Submit</button><br>
+                <button onclick="writeHints()">Hints</button><br>
+            </div>
+        </div>
     </body>
 </html>
