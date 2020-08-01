@@ -1,8 +1,23 @@
 <html>
     <head>
         <title>Welcome to Planet Zeta!</title>
+        <script src="zeta.js"></script>
     </head>
     <body>
-
+        <!--Caesar Cipher Puzzle-->
+        <h1>Welcome to Planet Zeta</h1>
+        <p>
+            Phew! You got pretty lucky there on Planet Epsilon, so you make sure that nothing of that sort happens again. First thing you do after landing on Planet Zeta is get a translator. 'Cause you're not going through all that again.
+        </p>
+        <p>
+            Now, there was a slight problem with getting the translator. Mainly the fact that you need to learn the word for 'translator' in Zet, the language of the Zetanians.
+        </p>
+        <p>
+            Luckily, you realize something. You realize that there are 26 letters in the Zet alphabet and that the prevalence of each letter is similar to English. Now, that might be similar to some kind of cipher. So, now all you need to do is find the word for 'translator' in Zet. How hard could that be?
+        </p>
+        <label for="solution">The word for 'translator' in Zet is:</label>
+        <input type="text" id="solution" name="solution" placeholder="Your answer here">
+        <button onclick="checkAnswer()">Submit</button><br>
+        <button onclick="writeHints()">Hints</button><br>
     </body>
 </html>
