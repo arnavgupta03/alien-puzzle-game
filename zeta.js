@@ -33,6 +33,7 @@ function createChatbox(){
     let firstBot = document.createElement("div");
     firstBot.width = "100%";
     firstBot.position = "absolute";
+    firstBot.style.color = "white";
     firstBot.innerHTML = "Translator: <span id='bot-response'>Hey, I'm going to talk in English for now, but we're going to practice some Zet. First, show me your skills. Translate 'zeta' into Zet.</span>";
     document.body.appendChild(firstBot);
     questNum += 1;
@@ -52,6 +53,7 @@ function outputUser(input){
     let userDiv = document.createElement("div");
     userDiv.id = "user";
     userDiv.innerHTML = "You: ".concat(input);
+    userDiv.style.color = "white";
     document.body.appendChild(userDiv);
 }
 function outputBot(input, questionNum){
@@ -59,13 +61,15 @@ function outputBot(input, questionNum){
         if (input === "fkzg"){
             let botDiv = document.createElement("div");
             botDiv.id = "bot";
-            botDiv.innerHTML = 'Translator: <span id="user-response">Correct! Alright, onto your first lesson.</span>';
+            botDiv.innerHTML = 'Translator: <span id="user-response">Correct! Alright, onto your first lesson. The translation between English and Zet is called a Caesar Cipher. It is one of the easiest to decode, since you just need to shift the alphabet a certain number of letters. </span>';
+            botDiv.style.color = "white";
             document.body.appendChild(botDiv);
             questNum += 1;
         } else {
             let botDiv = document.createElement("div");
             botDiv.id = "bot";
             botDiv.innerHTML = "Translator: <span id='user-response'>Sorry that's incorrect, try again!</span>";
+            botDiv.style.color = "white";
             document.body.appendChild(botDiv);
         }
     }
