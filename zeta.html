@@ -4,7 +4,7 @@
         <title>Welcome to Planet Zeta!</title>
         <script type="text/javascript" src="zeta.js"></script>
     </head>
-    <body>
+    <body onload="onLoad()">
         <!--Caesar Cipher Puzzle-->
         <h1>Welcome to Planet Zeta</h1>
         <p>
@@ -19,7 +19,7 @@
         <label for="solution">The word for 'translator' in Zet is:</label>
         <input type="text" id="solution" name="solution" placeholder="Your answer here">
         <button onclick="checkFirstAnswer()">Submit</button><br>
-        <button onclick="writeHints()">Hints</button><br>
+        <button id="hint" onclick="writeHints()">Hints</button><br>
         <p id="afterFirstCorrect"></p>
     </body>
 </html>
