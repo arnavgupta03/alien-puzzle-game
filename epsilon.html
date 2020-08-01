@@ -3,6 +3,7 @@
     <head>
         <title>Welcome to Planet Epsilon!</title>
         <script src="epsilon.js"></script>
+        <link rel="stylesheet" href="epsilon.css">
     </head>
     <body>
         <!-- Binary Math Puzzle-->
@@ -16,9 +17,11 @@
         <p>
             Here's the question: 012341213 + 414203241 - 40 = ?
         </p>
-        <label for="solution">Your solution:</label>
-        <input type="text" id="solution" name="solution" placeholder="Your answer here">
-        <button onclick="checkAnswer()">Submit</button><br>
-        <button onclick="writeHint()">Hint</button><br>
+        <div class="prompt">
+            <label for="solution">Your solution:</label>
+            <input type="text" id="solution" name="solution" placeholder="Your answer here">
+            <button onclick="checkAnswer()">Submit</button><br>
+            <button onclick="writeHint()">Hint</button><br>
+        </div>
     </body>
 </html>
