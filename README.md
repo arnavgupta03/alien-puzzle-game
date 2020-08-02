@@ -1,4 +1,4 @@
-# alien-puzzle-game
+# Galaxy Center: A Cryptography Game
 
 A simple puzzle game based on ciphers and discovering alien planets.
 
