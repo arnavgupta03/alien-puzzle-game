@@ -8,7 +8,7 @@
     <body>
         <h1>Welcome to Planet Kappa!</h1>
         <p>
-            If you're here, you must have bested the aliens on Planet Epsilon and Planet Zeta. But here, you face the Kappans. 
+            Uh oh, looks like you might face some trouble. After all, you are here to steal something. And soon enough, you come face-to-face the Kappans. 
         </p>
         <p>
             As you land on the planet, you immediately notice a group of armed guards surround your ship. You're exhausted from the other planets, and so, you surrender. But, they don't let you go so easily. You first have to answer a series of questions. Also, your translator's still broken.
@@ -18,10 +18,11 @@
         </p>
         <div class="outer">
             <div class="prompt">
-                <label for="solution">What do you say?</label>
+                <label for="solution">What do you say? (Answer in English)</label>
                 <input type="text" id="solution" name="solution" placeholder="Your answer here">
-                <button onclick="checkAnswer()">Submit</button><br>
+                <button onclick="checkAnswers()">Submit</button><br>
                 <button onclick="writeHints()">Hints</button><br>
+                <p id="afterFirstCorrect"></p>
             </div>
         </div>
     </body>
