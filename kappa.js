@@ -7,17 +7,20 @@ function writeHints(){
     hint.innerHTML = "Hint: The citizens of this planet are not known for being friendly. Except to Vigenere.";
     hint.style.width = "100%";
     hint.style.position = "absolute";
+    hint.style.color = "white";
+    hint.style.fontFamily = "sans-serif";
     hint.id = "hints";
     document.body.appendChild(hint);
 }
 function checkAnswers(){
     var answer = document.getElementById("solution").value;
-    var solution = "kappa"
+    var solution = "kappa";
     if (answer.toLowerCase() === solution){
         alert("Nice job! But these Kappans aren't done with you yet...");
+        document.getElementById("hints").innerHTML = "";
         var question2 = document.createElement("div");
         question2.id = "secondquestion";
-        question2.innerHTML = "<label for='question2'>Ghpi abe ndu regt fyr? (Answer in English)</label><input type='text' id='question2' name='question2' placeholder='Your answer here'><button onclick='checkAnswer2()'>Submit</button><br>";
+        question2.innerHTML = "<label for='question2'>Ghpi abe ndu regt fyr? (Answer in English)</label><input type='text' id='question2' name='question2' placeholder='Your answer here'><button onclick='checkAnswer2()'>Submit</button><br><button onclick='hint2()'>Hint</button><br>";
         question2.style.width = "100%";
         question2.style.position = "absolute";
         question2.style.color = "white";
@@ -34,8 +37,9 @@ function checkAnswer2() {
     if (answer.toLowerCase() === solution){
         alert("Awesome! The Kappans want to ask you one last question before they give you the venom.");
         document.getElementById("secondquestion").innerHTML = "";
+        document.getElementById("hint2").innerHTML = "";
         var question3 = document.createElement("div");
-        question3.innerHTML = "<label for='question3'>Ghpi ic twxs mieweb npben auieb? (Answer in English)</label><input type='text' id='question3' name='question3' placeholder='Your answer here'><button onclick='checkAnswer3()'>Submit</button><br>";
+        question3.innerHTML = "<label for='question3'>Ghpi ic twxs mieweb npben auieb? (Answer in English)</label><input type='text' id='question3' name='question3' placeholder='Your answer here'><button onclick='checkAnswer3()'>Submit</button><br><button onclick='hint3()'>Hint</button><br>";
         question3.id = "thirdquestion";
         question3.style.width = "100%";
         question3.style.position = "absolute";
@@ -68,4 +72,19 @@ function checkAnswer3() {
 function onwards() {
     localStorage.setItem("kappaDone","true");
     window.location.href = "index.html";
+}
+function hint2() {
+    var hints2 = document.createElement("div");
+    hints2.innerHTML = "<br><br><p align='center'>Hint: One of the most expensive liquids in the world. Also a Spider-Man villain.</p>";
+    hints2.style.color = "white";
+    hints2.id = "hint2";
+    hints2.style.fontFamily = "sans-serif";
+    document.body.appendChild(hints2);
+}
+function hint3() {
+    var hints3 = document.createElement("div");
+    hints3.innerHTML = "<br><br><p align='center'>Hint: This is the ____ cipher. (Full name)</p>";
+    hints3.style.color = "white";
+    hints3.style.fontFamily = "sans-serif";
+    document.body.appendChild(hints3);
 }
