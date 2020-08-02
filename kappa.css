@@ -24,3 +24,11 @@ div.outer {
 div.prompt {
     display: inline-block;
 }
+
+button {
+    font-family: sans-serif;
+    background-color: inherit;
+    text-align: center;
+    color: white;
+    border: none;
+}
