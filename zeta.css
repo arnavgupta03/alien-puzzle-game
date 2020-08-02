@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://cdn.pixabay.com/photo/2012/11/28/10/16/star-clusters-67616_960_720.jpg');
+    background-image: url('https://cdn.pixabay.com/photo/2016/09/08/12/00/starry-sky-1654074_960_720.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -23,4 +23,13 @@ div.outer {
 
 div.prompt {
     display: inline-block;
+}
+
+button {
+    font-family: sans-serif;
+    background-color: powderblue;
+    text-align: center;
+    color: black;
+    text-decoration-color: black;
+    border: none;
 }
