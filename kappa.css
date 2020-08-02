@@ -27,8 +27,9 @@ div.prompt {
 
 button {
     font-family: sans-serif;
-    background-color: inherit;
+    background-color: powderblue;
     text-align: center;
-    color: white;
+    color: black;
+    text-decoration-color: black;
     border: none;
 }
