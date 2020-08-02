@@ -34,6 +34,8 @@ function createChatbox(){
     firstBot.width = "100%";
     firstBot.position = "absolute";
     firstBot.style.color = "white";
+    firstBot.style.fontFamily = "sans-serif";
+    firstBot.style.fontWeight = "600";
     firstBot.innerHTML = "Translator: <span id='bot-response'>Hey, I'm going to talk in English for now, but we're going to practice some Zet. First, show me your skills. Translate 'zeta' into Zet.</span>";
     document.body.appendChild(firstBot);
     questNum += 1;
@@ -54,6 +56,8 @@ function outputUser(input){
     userDiv.id = "user";
     userDiv.innerHTML = "You: ".concat(input);
     userDiv.style.color = "white";
+    userDiv.style.fontFamily = "sans-serif";
+    userDiv.style.fontWeight = "600";
     document.body.appendChild(userDiv);
 }
 function outputBot(input, questionNum){
@@ -63,6 +67,8 @@ function outputBot(input, questionNum){
             botDiv.id = "bot";
             botDiv.innerHTML = 'Translator: <span id="user-response">Correct! Alright, onto your first lesson. The translation between English and Zet is called a Caesar Cipher. It is one of the easiest to decode, since you just need to shift the alphabet a certain number of letters. One way to be able to tell how much the shift is between English and another language that uses the Caesar Cipher is to count the number of letters between the most common letter in the other language and the letter e. For example, in Zet, the most common letter is k. What is the shift?</span>';
             botDiv.style.color = "white";
+            botDiv.style.fontFamily = "sans-serif";
+            botDiv.style.fontWeight = "600";
             document.body.appendChild(botDiv);
             questNum += 1;
         } else {
@@ -70,14 +76,18 @@ function outputBot(input, questionNum){
             botDiv.id = "bot";
             botDiv.innerHTML = "Translator: <span id='user-response'>Sorry that's incorrect, try again!</span>";
             botDiv.style.color = "white";
+            botDiv.style.fontFamily = "sans-serif";
+            botDiv.style.fontWeight = "600";
             document.body.appendChild(botDiv);
         }
     } else if (questionNum == 2) {
         if (parseInt(input) === 6){
             let botDiv = document.createElement("div");
             botDiv.id = "bot";
-            botDiv.innerHTML = 'Translator: <span id="user-response">Nice job! Onto the next lesson.</span>';
+            botDiv.innerHTML = "Translator: <span id='user-response'>Nice job! Onto your final test. Yeah, you only get one lesson. Let's see if you know enough Zet. Translate the following sentence from Zet to English: Nkrv sk Uho-Cgt Qktuho, eua'xk se utre nuvk!</span>";
             botDiv.style.color = "white";
+            botDiv.style.fontFamily = "sans-serif";
+            botDiv.style.fontWeight = "600";
             document.body.appendChild(botDiv);
             questNum += 1;
         } else {
@@ -85,7 +95,35 @@ function outputBot(input, questionNum){
             botDiv.id = "bot";
             botDiv.innerHTML = "Translator: <span id='user-response'>No, that's not the right number. Why don't you try again?</span>";
             botDiv.style.color = "white";
+            botDiv.style.fontFamily = "sans-serif";
+            botDiv.style.fontWeight = "600";
             document.body.appendChild(botDiv);
         }
+    } else if (questionNum == 3) {
+        if (input.toLowerCase() === "help me obi-wan kenobi, you're my only hope!") {
+            let botDiv = document.createElement("div");
+            botDiv.id = "bot";
+            botDiv.innerHTML = "Translator: <span id='user-response'>Great job! Now you're done. You no longer need me to teach you any more Zet. One problem though. You still haven't paid me. And since I know you don't have any money, I want you to steal a very special liquid from the Planet Kappa. Yes, steal. They won't let you take it that easily. Well, what are you waiting for? Get on with it.</span>";
+            botDiv.style.color = "white";
+            botDiv.style.fontFamily = "sans-serif";
+            botDiv.style.fontWeight = "600";
+            document.body.appendChild(botDiv);
+            let onwardButton = document.createElement("div");
+            onwardButton.id = "onward";
+            onwardButton.innerHTML = "<button onClick='onward()'>Onward!</button>";
+            document.body.appendChild(onwardButton);
+        } else {
+            let botDiv = document.createElement("div");
+            botDiv.id = "bot";
+            botDiv.innerHTML = "Translator: <span id='user-response'>Sorry, that's not it. Try it again!</span>";
+            botDiv.style.color = "white";
+            botDiv.style.fontFamily = "sans-serif";
+            botDiv.style.fontWeight = "600";
+            document.body.appendChild(botDiv);
+        } 
     }
+}
+function onward() {
+    localStorage.setItem("zetaDone","true");
+    window.location.href = "index.html";
 }
