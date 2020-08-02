@@ -20,9 +20,15 @@ function disableButtons() {
     if (zetaDone.localeCompare("true") != 0){
         document.getElementById("kappa").disabled = KappaDisabled;
     }
-    if (kappaDone === "true"){
+    if (kappaDone.localeCompare("true") == 0){
         var win = document.createElement("div");
         win.innerHTML = "<p align='center'>Congratulations! You've bested all the planets! Rejoice in your glory!</p>";
+        win.style.position = "absolute";
+        win.style.color = "white";
+        win.style.width = "100%";
+        win.style.fontFamily = "sans-serif";
+        win.style.textAlign = "center";
+        document.body.appendChild(win);
     }
 }
 function onLoad() {
